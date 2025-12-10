@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.sudoku.HelloController"
+            prefWidth="500" prefHeight="600"
+            style="-fx-background-color: #f5f5f5;">
+
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <GridPane fx:id="grid"
+                      hgap="2" vgap="2"
+                      style="-fx-background-color: black;">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+            </GridPane>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <HBox spacing="15" BorderPane.alignment="CENTER">
+            <Button fx:id="btnSolve" text="Solve" style="-fx-font-size: 16; -fx-padding: 10 20;" />
+            <Button fx:id="btnClear" text="Clear" style="-fx-font-size: 16; -fx-padding: 10 20;" />
+            <Button fx:id="btnNew" text="New Puzzle" style="-fx-font-size: 16; -fx-padding: 10 20;" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
