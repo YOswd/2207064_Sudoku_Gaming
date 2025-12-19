@@ -26,10 +26,11 @@
 
     <bottom>
         <HBox spacing="15" BorderPane.alignment="CENTER">
-            <Button fx:id="btnSolve" text="Solve" style="-fx-font-size: 16; -fx-padding: 10 20;" />
-            <Button fx:id="btnClear" text="Clear" style="-fx-font-size: 16; -fx-padding: 10 20;" />
-            <Button fx:id="btnNew" text="New Puzzle" style="-fx-font-size: 16; -fx-padding: 10 20;" />
+            <Button fx:id="btnSolve" text="Solve" />
+            <Button fx:id="btnClear" text="Clear" />
+            <Button fx:id="btnNew" text="New Puzzle" />
+            <Button fx:id="btnSave" text="Save" />
+            <Button fx:id="btnExit" text="Exit" />
         </HBox>
     </bottom>
-
 </BorderPane>

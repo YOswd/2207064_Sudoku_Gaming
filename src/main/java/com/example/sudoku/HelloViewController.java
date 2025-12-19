@@ -13,8 +13,12 @@ public class HelloViewController {
     private Button btnPlay;
 
     @FXML
+    private Button btnExit;
+
+    @FXML
     public void initialize() {
         btnPlay.setOnAction(e -> openMenu());
+        btnExit.setOnAction(e -> exitGame());
     }
 
     private void openMenu() {
@@ -25,5 +29,10 @@ public class HelloViewController {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+    private void exitGame() {
+        Stage stage = (Stage) btnExit.getScene().getWindow();
+        stage.close();
     }
 }
